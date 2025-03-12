@@ -1,0 +1,21 @@
+version: 4.2.18
+session: 67d206d7688455a08d68ad38
+steps:
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Reload the webpage.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the error page
+        action: click
+  - prompt: Click on each navigation link.
+    commands: []
+  - prompt: >-
+      Assert that each navigation link directs to the correct page.  # Use the
+      content of the file from the environment
+    commands: []
