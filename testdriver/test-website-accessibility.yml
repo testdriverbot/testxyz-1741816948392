@@ -1,0 +1,25 @@
+version: 4.2.18
+session: 67d206c9688455a08d68ad1e
+steps:
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: Reload the webpage.
+    commands:
+      - command: hover-text
+        text: Reload
+        description: reload button on the error page
+        action: click
+  - prompt: Reload the webpage.
+    commands:
+      - command: press-keys
+        keys:
+          - control
+          - r
+  - prompt: >-
+      Assert that the website loads successfully without errors.  # Use the
+      content of the file from the environment
+    commands: []
